@@ -1,0 +1,23 @@
+* {}
+
+h1 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+	padding: 10px;
+}
+
+.description {
+	font-size: 11pt;
+	font-style: italic;
+}

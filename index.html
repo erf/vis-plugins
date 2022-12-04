@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vis-plugins</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>vis-plugins</h1>
+	<p>vis-plugins is a community driven collection of plugins for the <a href="https://github.com/martanne/vis">vis</a>
+		text editor.</p>
+	<p>The original list was taken from the vis wiki <a href="https://github.com/martanne/vis/wiki/Plugins">Plugins</a>
+		and <a href="https://github.com/martanne/vis/wiki/Themes">Themes</a>.</p>
+	<p>Make PR's to this repo to update <a href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
+
+	<h2>Installation</h2>
+	<p>vis-plugins can be installed using <a href="https://github.com/erf/vis-plug">vis-plug</a></p>
+
+	<div class="row">
+		<h2>Plugins</h2>
+		<ul id="plugins" class="column"></ul>
+
+		<h2>Themes</h2>
+		<ul id="themes" class="column"></ul>
+	</div>
+
+	<script type="text/javascript" src="plugins.js"></script>
+	<script type="text/javascript" src="themes.js"></script>
+	<script type="text/javascript" src="elite.min.js"></script>
+	<script>
+
+		// list plugins.json
+		let plugins_el = plugins.map((plugin) => {
+			return el('li', [
+				el('p', plugin.name),
+				el('p', plugin.description, { class: 'description' }),
+				el('a', { href: plugin.repo }, plugin.repo),
+				el('p', plugin.path || 'init.lua'),
+			]);
+		})
+		set('plugins', plugins_el)
+
+		// list themes.json
+		let themes_el = themes.map((theme) => {
+			return el('li', [
+				el('p', theme.name),
+				el('a', { href: theme.repo }, theme.repo),
+				el('p', theme.path || 'init.lua'),
+				el('img', '', { src: theme.image, width: "320px" }),
+			]);
+		})
+		set('themes', themes_el)
+
+	</script>
+</body>
+
+</html>
