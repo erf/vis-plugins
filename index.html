@@ -12,27 +12,32 @@
 <body>
 	<h1>vis-plugins</h1>
 
-	<p>vis-plugins is a community driven collection of plugins for the <a href="https://github.com/martanne/vis">vis</a>
+	<p>vis-plugins is collection of plugins for the <a href="https://github.com/martanne/vis">vis</a>
 		text editor.</p>
 	<p>The original list was taken from the vis wiki <a href="https://github.com/martanne/vis/wiki/Plugins">Plugins</a>
 		and <a href="https://github.com/martanne/vis/wiki/Themes">Themes</a>.</p>
-	<p>Make PR's to this repo to update <a href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
+	<p>Make PR's to <a href="https://github.com/erf/vis-plugins">vis-plugins</a> to update <a href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
 
 	<h2>Installation</h2>
 
-	<p>vis-plugins can be installed using <a href="https://github.com/erf/vis-plug">vis-plug</a></p>
+	<p>vis-plugins can be installed <a href="https://github.com/martanne/vis/wiki/Plugins">manually</a> or using <a
+			href="https://github.com/erf/vis-plug">vis-plug</a></p>
 
 	<div class="row">
 
-		<h2>Plugins</h2>
+		<div class="column">
+			<h2>Plugins</h2>
+			<ul id="plugins"></ul>
+		</div>
 
-		<ul id="plugins" class="column"></ul>
-
-		<h2>Themes</h2>
-
-		<ul id="themes" class="column"></ul>
+		<div class="column">
+			<h2>Themes</h2>
+			<ul id="themes"></ul>
+		</div>
 
 	</div>
+
+	<div id="modal"></div>
 
 	<script type="text/javascript" src="plugins.js"></script>
 	<script type="text/javascript" src="themes.js"></script>
@@ -56,7 +61,11 @@
 				el('p', theme.name),
 				el('a', { href: theme.repo }, theme.repo),
 				el('p', theme.path || 'init.lua'),
-				el('img', { src: theme.image, class: 'image' }),
+				el('img', { src: theme.image, class: 'image' }, {
+					click: () => {
+						// TODO show modal view of image
+					}
+				}),
 			]);
 		})
 		set('themes', themes_el)
