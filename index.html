@@ -11,6 +11,7 @@
 
 <body>
 	<h1>vis-plugins</h1>
+
 	<p>vis-plugins is a community driven collection of plugins for the <a href="https://github.com/martanne/vis">vis</a>
 		text editor.</p>
 	<p>The original list was taken from the vis wiki <a href="https://github.com/martanne/vis/wiki/Plugins">Plugins</a>
@@ -18,14 +19,19 @@
 	<p>Make PR's to this repo to update <a href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
 
 	<h2>Installation</h2>
+
 	<p>vis-plugins can be installed using <a href="https://github.com/erf/vis-plug">vis-plug</a></p>
 
 	<div class="row">
+
 		<h2>Plugins</h2>
+
 		<ul id="plugins" class="column"></ul>
 
 		<h2>Themes</h2>
+
 		<ul id="themes" class="column"></ul>
+
 	</div>
 
 	<script type="text/javascript" src="plugins.js"></script>
@@ -50,7 +56,7 @@
 				el('p', theme.name),
 				el('a', { href: theme.repo }, theme.repo),
 				el('p', theme.path || 'init.lua'),
-				el('img', '', { src: theme.image, width: "320px" }),
+				el('img', { src: theme.image, class: 'image' }),
 			]);
 		})
 		set('themes', themes_el)
