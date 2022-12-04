@@ -1,3 +1,3 @@
 # vis-plugins
 
-A community driven list of plugins for the vis edtior.
+A community driven list of plugins and themes for the vis editor.
