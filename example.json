@@ -1,38 +1,38 @@
 const themes = [
 	{
 		name: 'acme',
-		url: 'https://github.com/timoha/vis-acme/',
-		file: 'acme.lua',
+		repo: 'https://github.com/timoha/vis-acme/',
+		path: 'acme.lua',
 		image: 'https://raw.githubusercontent.com/timoha/vis-acme/master/image.png'
 	},
 	{
 		name: 'citron',
-		url: 'https://github.com/kiwec/vis-citron/',
-		file: 'acme.lua',
+		repo: 'https://github.com/kiwec/vis-citron/',
+		path: 'acme.lua',
 		image: ''
 	},
 	{
 		name: 'seti',
-		url: 'https://github.com/erf/vis-seti/',
-		file: 'seti.lua',
+		repo: 'https://github.com/erf/vis-seti/',
+		path: 'seti.lua',
 		image: ''
 	},
 	{
 		name: 'dark',
-		url: 'https://github.com/erf/vis-minimal-theme/',
-		file: 'dark.lua',
+		repo: 'https://github.com/erf/vis-minimal-theme/',
+		path: 'dark.lua',
 		image: ''
 	},
 	{
 		name: 'light',
-		url: 'https://github.com/erf/vis-minimal-theme/',
-		file: 'light.lua',
+		repo: 'https://github.com/erf/vis-minimal-theme/',
+		path: 'light.lua',
 		image: ''
 	},
 	{
 		name: 'gruvbox',
-		url: 'https://github.com/samlwood/vis-gruvbox/',
-		file: 'acme.lua',
+		repo: 'https://github.com/samlwood/vis-gruvbox/',
+		path: 'acme.lua',
 		image: ''
 	},
 ]
