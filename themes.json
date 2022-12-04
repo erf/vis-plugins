@@ -518,7 +518,7 @@
   {
     "name": "peaksea",
     "repo": "https://gitlab.com/SZanko/vis-peaksea",
-    "path": "raw/master/peaksea.lua",
+    "path": "peaksea.lua",
     "image": "https://gitlab.com/SZanko/vis-peaksea/-/raw/master/img/peaksea-dark.jpg"
   }
 ]
