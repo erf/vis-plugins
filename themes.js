@@ -25,6 +25,7 @@ async function parseThemes() {
 		return theme
     })
 
-    console.log(themes)
+	let content = JSON.stringify(themes, null, 2)
+    await fs.writeFile('themes.json', content)
 }
 parseThemes();
