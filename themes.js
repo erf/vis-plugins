@@ -1,4 +1,4 @@
-[
+const themes = [
   {
     "name": "acme",
     "repo": "https://github.com/timoha/vis-acme",
