@@ -47,7 +47,7 @@
 		// list plugins.json
 		let plugins_el = plugins.map((plugin) => {
 			return el('li', [
-				el('p', plugin.name),
+				el('p', plugin.name, { 'class': 'name' }),
 				el('p', plugin.description, { class: 'description' }),
 				el('a', { href: plugin.repo }, plugin.repo),
 				el('p', plugin.path || 'init.lua'),
@@ -58,7 +58,7 @@
 		// list themes.json
 		let themes_el = themes.map((theme) => {
 			return el('li', [
-				el('p', theme.name),
+				el('p', theme.name, { 'class': 'name' }),
 				el('a', { href: theme.repo }, theme.repo),
 				el('p', theme.path || 'init.lua'),
 				el('img', { src: theme.image, class: 'image' }, {

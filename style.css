@@ -26,8 +26,11 @@ ul {
 	flex: 50%;
 }
 
+.name {
+	font-weight: bold;
+}
+
 .description {
-	font-size: 11pt;
 	font-style: italic;
 }
 
