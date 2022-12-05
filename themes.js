@@ -15,7 +15,7 @@ const themes = [
     "name": "papercolor",
     "repo": "https://github.com/jceb/dotfiles",
     "path": "editors/.config/vis/themes/papercolor",
-    "image": "https://github.com/jceb/dotfiles/blob/master/editors/.config/vis/themes/papercolor_vis_vim_side_by_side.png"
+    "image": "https://github.com/jceb/dotfiles/raw/master/editors/.config/vis/themes/papercolor_vis_vim_side_by_side.png"
   },
   {
     "name": "seti",
