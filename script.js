@@ -1,6 +1,6 @@
 // copy a vis-plug config line to the clipboard
 function copy(plugin, theme) {
-	let lua = `{ url = '${plugin.repo}', file = '${plugin.path}', theme = ${theme} }`
+	let lua = `{ url = '${plugin.repo}', file = '${plugin.path ?? 'init'}', theme = ${theme} }`
 	navigator.clipboard.writeText(lua);
 }
 
