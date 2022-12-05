@@ -16,7 +16,8 @@
 		text editor.</p>
 	<p>The original list was taken from the vis wiki <a href="https://github.com/martanne/vis/wiki/Plugins">Plugins</a>
 		and <a href="https://github.com/martanne/vis/wiki/Themes">Themes</a>.</p>
-	<p>Make PR's to <a href="https://github.com/erf/vis-plugins">vis-plugins</a> to update <a href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
+	<p>Make PR's to <a href="https://github.com/erf/vis-plugins">vis-plugins</a> to update <a
+			href="./plugins.js">plugins.js</a> or <a href="./themes.js">themes.js</a></p>
 
 	<h2>Installation</h2>
 
@@ -45,6 +46,7 @@
 	<script>
 
 		// list plugins.json
+		plugins.sort((a, b) => a.name.localeCompare(b.name));
 		let plugins_el = plugins.map((plugin) => {
 			return el('li', [
 				el('p', plugin.name, { 'class': 'name' }),
@@ -56,6 +58,7 @@
 		set('plugins', plugins_el)
 
 		// list themes.json
+		themes.sort((a, b) => a.name.localeCompare(b.name));
 		let themes_el = themes.map((theme) => {
 			return el('li', [
 				el('p', theme.name, { 'class': 'name' }),
