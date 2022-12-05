@@ -33,4 +33,9 @@ ul {
 
 .image {
 	width: 420px;
+	transition: transform .2s;
+}
+
+.image:hover {
+	transform: scale(2.0)
 }
