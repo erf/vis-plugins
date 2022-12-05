@@ -24,6 +24,8 @@
 	<p>vis-plugins can be installed <a href="https://github.com/martanne/vis/wiki/Plugins">manually</a> or using <a
 			href="https://github.com/erf/vis-plug">vis-plug</a></p>
 
+	<input type="text" id="search" placeholder="Search">
+
 	<div class="row">
 
 		<div class="column">
@@ -37,8 +39,6 @@
 		</div>
 
 	</div>
-
-	<div id="modal"></div>
 
 	<script type="text/javascript" src="plugins.js"></script>
 	<script type="text/javascript" src="themes.js"></script>
@@ -72,6 +72,22 @@
 			]);
 		})
 		set('themes', themes_el)
+
+		function search() {
+			let query = get('search').value
+			let pluginList = get('plugins').getElementsByTagName('li')
+			let themeList = get('themes').getElementsByTagName('li')
+			for (let plugin of pluginList) {
+				plugin.style.display = plugin.innerText.toLowerCase().indexOf(query.toLowerCase()) > -1 ?
+					'block' : 'none'
+			}
+			for (let theme of themeList) {
+				theme.style.display = theme.innerText.toLowerCase().indexOf(query.toLowerCase()) > -1
+					? 'block' : 'none';
+			}
+		}
+
+		get('search').addEventListener('input', search);
 
 	</script>
 </body>
