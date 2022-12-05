@@ -52,6 +52,12 @@
 	<script type="text/javascript" src="elite.min.js"></script>
 	<script>
 
+		// copy a vis-plug config line to the clipboard
+		function copy(plugin, theme) {
+			let lua = `{ url = '${plugin.repo}', file = '${plugin.path}', theme = ${theme} }`
+			navigator.clipboard.writeText(lua);
+		}
+
 		// list plugins.json
 		plugins.sort((a, b) => a.name.localeCompare(b.name));
 		let plugins_el = plugins.map((plugin) => {
@@ -60,6 +66,7 @@
 				el('p', plugin.description, { class: 'description' }),
 				el('a', { href: plugin.repo }, plugin.repo),
 				el('p', plugin.path || 'init.lua'),
+				el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, false) }),
 			]);
 		})
 		set('plugins', plugins_el)
@@ -72,6 +79,7 @@
 				el('img', { src: theme.image, class: 'image' }),
 				el('a', { href: theme.repo }, theme.repo),
 				el('p', theme.path || 'init.lua'),
+				el('button', 'copy', { class: 'copy' }, { click: () => copy(theme, true) }),
 			]);
 		})
 		set('themes', themes_el)
