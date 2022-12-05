@@ -61,3 +61,11 @@ ul {
 .image:hover {
 	transform: scale(2.0)
 }
+
+.copy {
+	font-size: 10pt;
+	margin-left: 8px;
+	background-color: white;
+	box-shadow: none;
+	text-shadow: none;
+}
