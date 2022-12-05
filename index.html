@@ -17,7 +17,8 @@
 	<p>The original list was taken from the vis wiki pages <a
 			href="https://github.com/martanne/vis/wiki/Plugins">Plugins</a> and <a
 			href="https://github.com/martanne/vis/wiki/Themes">Themes</a></p>
-	<p>You are welcome to create PR's to to update <a href="./plugins.js">plugins.js</a> / <a href="./themes.js">themes.js</a>, or to improve
+	<p>You are welcome to create PR's to to update <a href="./plugins.js">plugins.js</a> / <a
+			href="./themes.js">themes.js</a>, or to improve
 		this page.</p>
 	<p>Plugins can be installed <a href="https://github.com/martanne/vis/wiki/Plugins">manually</a> or using <a
 			href="https://github.com/erf/vis-plug">vis-plug</a>.</p>
@@ -80,12 +81,12 @@
 			let pluginList = get('plugins').getElementsByTagName('li')
 			let themeList = get('themes').getElementsByTagName('li')
 			for (let plugin of pluginList) {
-				plugin.style.display = plugin.innerText.toLowerCase().indexOf(query.toLowerCase()) > -1 ?
-					'block' : 'none'
+				plugin.style.display = plugin.innerText.toLowerCase()
+					.indexOf(query.toLowerCase()) > -1 ? 'block' : 'none'
 			}
 			for (let theme of themeList) {
-				theme.style.display = theme.innerText.toLowerCase().indexOf(query.toLowerCase()) > -1
-					? 'block' : 'none';
+				theme.style.display = theme.innerText.toLowerCase()
+					.indexOf(query.toLowerCase()) > -1 ? 'block' : 'none';
 			}
 		}
 
