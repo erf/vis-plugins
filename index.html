@@ -53,6 +53,7 @@
 				el('p', plugin.description, { class: 'description' }),
 				el('a', { href: plugin.repo }, plugin.repo),
 				el('p', plugin.path || 'init.lua'),
+				el('br')
 			]);
 		})
 		set('plugins', plugins_el)
@@ -69,6 +70,8 @@
 						// TODO show modal view of image
 					}
 				}),
+				el('br'),
+				el('br')
 			]);
 		})
 		set('themes', themes_el)
