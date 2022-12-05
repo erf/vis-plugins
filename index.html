@@ -24,16 +24,25 @@
 	<p>vis-plugins can be installed <a href="https://github.com/martanne/vis/wiki/Plugins">manually</a> or using <a
 			href="https://github.com/erf/vis-plug">vis-plug</a></p>
 
+	<br>
+
+
+	<label for="show-plugins">plugins</label>
+	<input checked="true" type="checkbox" id="show-plugins" onclick="toggle_plugins()">
+
+	<label for="show-themes">themes</label>
+	<input checked="true" type="checkbox" id="show-themes" onclick="toggle_themes()">
+
 	<input type="text" id="search" placeholder="Search">
 
 	<div class="row">
 
-		<div class="column">
+		<div id="plugins-container" class="column">
 			<h2>Plugins</h2>
 			<ul id="plugins"></ul>
 		</div>
 
-		<div class="column">
+		<div id="themes-container" class="column">
 			<h2>Themes</h2>
 			<ul id="themes"></ul>
 		</div>
@@ -91,6 +100,16 @@
 		}
 
 		get('search').addEventListener('input', search);
+
+		function toggle_plugins() {
+			let pluginsDiv = get('plugins-container')
+			pluginsDiv.style.display = get('show-plugins').checked ? 'block' : 'none'
+		}
+
+		function toggle_themes() {
+			let themesDiv = get('themes-container')
+			themesDiv.style.display = get('show-themes').checked ? 'block' : 'none'
+		}
 
 	</script>
 </body>
