@@ -1,4 +1,5 @@
-*, body {
+*,
+body {
 	font-weight: normal;
 	padding-left: 2pt;
 	padding-top: 2pt;
@@ -33,6 +34,16 @@ ul {
 	flex: 50%;
 }
 
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	gap: 8pt;
+}
+
+.item {
+	padding: 4pt;
+}
+
 .name {
 	font-weight: bold;
 }
@@ -42,8 +53,8 @@ ul {
 }
 
 .image {
-	width: 400px;
-	height: 200px;
+	width: 100%;
+	height: 50%;
 	object-fit: cover;
 }
 
