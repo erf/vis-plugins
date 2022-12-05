@@ -69,13 +69,9 @@
 		let themes_el = themes.map((theme) => {
 			return el('li', '', { class: 'item' }, [
 				el('p', theme.name, { 'class': 'name' }),
+				el('img', { src: theme.image, class: 'image' }),
 				el('a', { href: theme.repo }, theme.repo),
 				el('p', theme.path || 'init.lua'),
-				el('img', { src: theme.image, class: 'image' }, {
-					click: () => {
-						// TODO show modal view of image
-					}
-				}),
 			]);
 		})
 		set('themes', themes_el)
