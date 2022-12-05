@@ -49,7 +49,11 @@ function init() {
 		return el('li', { class: 'item' }, [
 			el('span', plugin.name, { 'class': 'name' }),
 			el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, true) }),
-			el('img', { src: plugin.image, class: 'image' }),
+			el('img', { src: plugin.image, class: 'image' }, {
+				click: () => {
+					window.open(plugin.image, '_blank').focus();
+				}
+			}),
 			el('a', { href: plugin.repo }, plugin.repo),
 			el('p', plugin.path || 'init.lua'),
 		]);
