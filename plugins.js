@@ -2,7 +2,7 @@ const plugins = [
 	{
 		"name": "vis-backup",
 		"repo": "https://github.com/hucal/vis-backup",
-		"path": "backup.lua",
+		"path": "backup",
 		"description": "make backups of current files before saving"
 	},
 	{
@@ -53,13 +53,13 @@ const plugins = [
 	{
 		"name": "vis-filetype-settings",
 		"repo": "https://github.com/jocap/vis-filetype-settings",
-		"path": "vis-filetype-settings.lua",
+		"path": "vis-filetype-settings",
 		"description": "set options automatically depending on filetype"
 	},
 	{
 		"name": "vis-fzf-mru",
 		"repo": "https://github.com/peaceant/vis-fzf-mru",
-		"path": "fzf-mru.lua",
+		"path": "fzf-mru",
 		"description": "open recently used files with fzf"
 	},
 	{
@@ -70,7 +70,7 @@ const plugins = [
 	{
 		"name": "vis-go",
 		"repo": "https://gitlab.com/timoha/vis-go",
-		"path": "vis-go.lua",
+		"path": "vis-go",
 		"description": "[Go](https://golang.org) development plugin"
 	},
 	{
@@ -101,19 +101,16 @@ const plugins = [
 	{
 		"name": "vis-motsel",
 		"repo": "https://repo.or.cz/vis-motsel.git",
-		"path": null,
 		"description": "create selections from motions"
 	},
 	{
 		"name": "vis-open_rej",
 		"repo": "https://gitlab.com/mcepl/vis-open_rej",
-		"path": null,
 		"description": "open the .rej file if present for the currently opened file."
 	},
 	{
 		"name": "vis-outdated",
 		"repo": "https://github.com/erf/vis-outdated",
-		"path": null,
 		"description": "keep up-to-date with a list of git repos"
 	},
 	{
@@ -159,7 +156,7 @@ const plugins = [
 	{
 		"name": "vis-super-shellout",
 		"repo": "https://github.com/seifferth/vis-super-shellout",
-		"path": "super-shellout.lua",
+		"path": "super-shellout",
 		"description": "an alternative way to insert output from arbitrary shell commands"
 	},
 	{
@@ -175,7 +172,7 @@ const plugins = [
 	{
 		"name": "vis-tmux-repl",
 		"repo": "https://github.com/maciejjan/vis-tmux-repl",
-		"path": "tmux-repl.lua",
+		"path": "tmux-repl",
 		"description": "send text from vis to another tmux pane (e.g. a read-eval-print loop)"
 	},
 	{
