@@ -1,5 +1,7 @@
-* {
+*, body {
 	font-weight: normal;
+	padding-left: 2pt;
+	padding-top: 2pt;
 }
 
 h1 {
@@ -15,7 +17,8 @@ body {
 }
 
 ul {
-	list-style: circle;
+	list-style: none;
+	padding: 0px;
 }
 
 #search {
