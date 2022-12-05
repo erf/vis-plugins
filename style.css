@@ -36,7 +36,7 @@ ul {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 8pt;
 }
 
@@ -59,13 +59,18 @@ ul {
 }
 
 .image:hover {
-	transform: scale(2.0)
+	transform: scale(1.5)
 }
 
 .copy {
-	font-size: 10pt;
 	margin-left: 8px;
-	background-color: white;
-	box-shadow: none;
-	text-shadow: none;
+	margin-bottom: 8px;
+	background-color: #f0f0f0;
+	border-radius: 1px;
+	border-width: 0px;
+	transition-duration: 0.3s;
+}
+
+.copy:hover {
+	background-color: #d0d0d0;
 }
