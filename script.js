@@ -18,11 +18,11 @@ let themes_el = themes.map((plugin) => {
 	return el('li', { class: 'item' }, [
 		el('span', plugin.name, { 'class': 'name' }),
 		el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, true) }),
-		el('img', { src: plugin.image, class: 'image' }, {
-			click: () => {
-				window.open(plugin.image, '_blank').focus();
-			}
-		}),
+		el('div', { class: 'image-container' }, [
+			el('img', { src: plugin.image, class: 'image' }, {
+				click: () => { window.open(plugin.image, '_blank').focus(); }
+			}),
+		]),
 		el('a', { href: plugin.repo }, plugin.repo),
 		el('span', ` (${plugin.path || 'init'})`),
 	]);
