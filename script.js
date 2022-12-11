@@ -46,8 +46,10 @@ function search() {
 }
 
 function set_plugin_type(type) {
+	localStorage.setItem('plugin-type', type);
 	switch (type) {
 		case 'plugin': {
+			// set checked
 			set('plugins', plugins_el)
 			break;
 		}
@@ -61,6 +63,14 @@ function set_plugin_type(type) {
 	}
 }
 
-set_plugin_type('plugin')
+const plugin_type = localStorage.getItem('plugin-type') ?? 'plugin'
 
-get('search').addEventListener('input', search);
+set_plugin_type(plugin_type)
+
+if (plugin_type === 'plugin') {
+	get('show-plugins').checked = true
+} else {
+	get('show-themes').checked = true
+}
+
+get('search').addEventListener('input', search)
