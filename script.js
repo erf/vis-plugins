@@ -7,7 +7,7 @@ let plugins_el = plugins.map((plugin) => {
 		el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, false) }),
 		el('p', plugin.description, { class: 'description' }),
 		el('a', { href: plugin.repo }, plugin.repo),
-		el('p', plugin.path || 'init.lua'),
+		el('span', ` (${plugin.path || 'init'})`),
 	]);
 })
 
@@ -24,7 +24,7 @@ let themes_el = themes.map((plugin) => {
 			}
 		}),
 		el('a', { href: plugin.repo }, plugin.repo),
-		el('p', plugin.path || 'init.lua'),
+		el('span', ` (${plugin.path || 'init'})`),
 	]);
 })
 
