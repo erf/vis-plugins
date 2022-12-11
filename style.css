@@ -3,35 +3,16 @@ body {
 	font-weight: normal;
 	padding-left: 2pt;
 	padding-top: 2pt;
-}
-
-h1 {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h2 {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-body {
 	font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul {
 	list-style: none;
 	padding: 0px;
-}
-
-#search {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.row {
-	display: flex;
-}
-
-.column {
-	flex: 50%;
 }
 
 .container {
@@ -41,7 +22,7 @@ ul {
 }
 
 .item {
-	padding: 4pt;
+	padding: 6pt;
 }
 
 .name {
