@@ -4,4 +4,4 @@ A collection of plugins and themes for the [vis text editor](https://github.com/
 
 Web page hosted at [https://erf.github.io/vis-plugins](https://erf.github.io/vis-plugins/)
 
-You are welcome to update [plugins.js](plugins.js) and [themes.js](themes.js) and to improve this page via PR's.
+You are welcome to contribute [plugins](plugins.js) / [themes](themes.js) or to improve the web page.
