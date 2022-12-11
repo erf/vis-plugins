@@ -4,7 +4,7 @@ plugins.sort((a, b) => a.name.localeCompare(b.name));
 let plugins_el = plugins.map((plugin) => {
 	return el('li', { class: 'item' }, [
 		el('span', plugin.name, { 'class': 'name' }),
-		el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, false) }),
+		el('button', 'plug', { class: 'copy' }, { click: () => copy(plugin, false) }),
 		el('p', plugin.description, { class: 'description' }),
 		el('a', { href: plugin.repo }, plugin.repo),
 		el('span', ` (${plugin.path || 'init'})`),
@@ -17,7 +17,7 @@ themes.sort((a, b) => a.name.localeCompare(b.name));
 let themes_el = themes.map((plugin) => {
 	return el('li', { class: 'item' }, [
 		el('span', plugin.name, { 'class': 'name' }),
-		el('button', 'copy', { class: 'copy' }, { click: () => copy(plugin, true) }),
+		el('button', 'plug', { class: 'copy' }, { click: () => copy(plugin, true) }),
 		el('div', { class: 'image-container' }, [
 			el('img', { src: plugin.image, class: 'image' }, {
 				click: () => { window.open(plugin.image, '_blank').focus(); }
