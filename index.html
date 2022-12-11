@@ -25,26 +25,23 @@
 
 	<br>
 
-	<label for="show-plugins">plugins</label>
-	<input checked type="checkbox" id="show-plugins" onclick="set_plugins_visibility()" autocomplete="off">
+	<form>
 
-	<label for="show-themes">themes</label>
-	<input checked type="checkbox" id="show-themes" onclick="set_themes_visibility()" autocomplete="off">
+	<label for="show-plugins">Plugin</label>
+	<input checked type="radio" id="show-plugins" name="plugin-type" onclick="set_plugin_type('plugin')" autocomplete="off">
+
+	<label for="show-themes">Theme</label>
+	<input type="radio" id="show-themes" name="plugin-type" onclick="set_plugin_type('theme')" autocomplete="off">
+
+	</form>
+
+	<br />
 
 	<input type="text" id="search" placeholder="Search">
 
-	<div class="row">
-
-		<div id="plugins-container" class="column">
-			<h2>Plugins</h2>
-			<ul id="plugins" class="container"></ul>
-		</div>
-
-		<div id="themes-container" class="column">
-			<h2>Themes</h2>
-			<ul id="themes" class="container"></ul>
-		</div>
-
+	<div id="plugins-container" class="column">
+		<h2 id="plugin-header">Plugins</h2>
+		<ul id="plugins" class="container"></ul>
 	</div>
 
 	<script type="text/javascript" src="plugins.js"></script>
