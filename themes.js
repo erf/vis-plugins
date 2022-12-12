@@ -24,31 +24,31 @@ const themes = [
     "image": "https://raw.githubusercontent.com/erf/vis-seti/master/screenshot.png"
   },
   {
-    "name": "light",
+    "name": "minimal-light",
     "repo": "https://github.com/erf/vis-minimal-theme",
     "path": "light",
     "image": "https://user-images.githubusercontent.com/1562523/204408762-f9be19a1-9024-43aa-9429-d9472dee4ec2.png"
   },
   {
-    "name": "dark",
+    "name": "minimal-dark",
     "repo": "https://github.com/erf/vis-minimal-theme",
     "path": "dark",
     "image": "https://user-images.githubusercontent.com/1562523/204408770-20a82cd6-0540-48b5-9f17-bf3c0b24fb3f.png"
   },
   {
-    "name": "light-clear",
+    "name": "minimal-light-clear",
     "repo": "https://github.com/erf/vis-minimal-theme",
     "path": "light-clear",
     "image": "https://user-images.githubusercontent.com/1562523/204408762-f9be19a1-9024-43aa-9429-d9472dee4ec2.png"
   },
   {
-    "name": "dark-clear",
+    "name": "minimal-dark-clear",
     "repo": "https://github.com/erf/vis-minimal-theme",
     "path": "dark-clear",
     "image": "https://user-images.githubusercontent.com/1562523/204408770-20a82cd6-0540-48b5-9f17-bf3c0b24fb3f.png"
   },
   {
-    "name": "clear",
+    "name": "minimal-clear",
     "repo": "https://github.com/erf/vis-minimal-theme",
     "path": "clear",
     "image": "https://user-images.githubusercontent.com/1562523/204667636-60de619b-8229-4f01-a540-99da73de6427.png"
