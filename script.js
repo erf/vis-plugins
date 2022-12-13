@@ -30,7 +30,7 @@ let themes_el = themes.map((plugin) => {
 
 // copy a vis-plug config line to the clipboard
 function copy(plugin, theme) {
-	let repo = plugin.repo.replace('https://github.com/', '')
+	let repo = plugin.repo.replace(/https:\/\/(github.com\/)?/, '')
 	let lua = `{ '${repo}', file = '${plugin.file ?? 'init'}', theme = ${theme} },`
 	navigator.clipboard.writeText(lua);
 }
