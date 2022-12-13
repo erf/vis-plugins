@@ -1,4 +1,3 @@
-// plugins.js
 plugins.sort((a, b) => a.name.localeCompare(b.name));
 
 let plugins_el = plugins.map((plugin) => {
@@ -11,7 +10,6 @@ let plugins_el = plugins.map((plugin) => {
 	]);
 })
 
-// themes.js
 themes.sort((a, b) => a.name.localeCompare(b.name));
 
 let themes_el = themes.map((plugin) => {
