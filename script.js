@@ -6,7 +6,7 @@ let plugins_el = plugins.map((plugin) => {
 		el('span', plugin.name, { 'class': 'name' }),
 		el('button', 'plug', { class: 'copy' }, { click: () => copy(plugin, false) }),
 		el('p', plugin.desc, { class: 'description' }),
-		el('a', { href: plugin.repo }, plugin.repo),
+		el('a', { href: plugin.url }, plugin.url),
 		el('span', ` (${plugin.file || 'init'})`),
 	]);
 })
@@ -23,14 +23,14 @@ let themes_el = themes.map((plugin) => {
 				click: () => { window.open(plugin.image, '_blank').focus(); }
 			}),
 		]),
-		el('a', { href: plugin.repo }, plugin.repo),
+		el('a', { href: plugin.url }, plugin.url),
 		el('span', ` (${plugin.file || 'init'})`),
 	]);
 })
 
 // copy a vis-plug config line to the clipboard
 function copy(plugin, theme) {
-	let repo = plugin.repo.replace(/https:\/\/(github.com\/)?/, '')
+	let repo = plugin.url.replace(/https:\/\/(github.com\/)?/, '')
 	let lua = `{ '${repo}', file = '${plugin.file ?? 'init'}', theme = ${theme} },`
 	navigator.clipboard.writeText(lua);
 }
