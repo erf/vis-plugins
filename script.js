@@ -31,12 +31,14 @@ let themes_el = themes.map((plugin) => {
 // copy a vis-plug config line to the clipboard
 function copy(plugin, theme) {
 	let repo = plugin.url.replace(/https:\/\/(github.com\/)?/, '')
-	var lua = ''
-	if (theme) {
-		lua = `{ '${repo}', file = '${plugin.file ?? 'init'}', theme = ${theme} },`
-	} else {
-		lua = `{ '${repo}', file = '${plugin.file ?? 'init'}'},`
+	var lua = `{ '${repo}' `
+	if (plugin.file) {
+		lua += `, file = '${plugin.file}' `
 	}
+	if (theme) {
+		lua += `, theme = ${theme} `
+	}
+	lua += `},`
 	navigator.clipboard.writeText(lua);
 }
 
