@@ -1,5 +1,10 @@
 const plugins = [
 	{
+		"name": "vis-backspace",
+		"url": "https://github.com/milhnl/vis-backspace",
+		"desc": "remove backspaces with alignment to tabwidth, like vim's softtabstop"
+	},
+	{
 		"name": "vis-backup",
 		"url": "https://github.com/hucal/vis-backup",
 		"file": "backup",
@@ -107,6 +112,11 @@ const plugins = [
 		"name": "vis-open_rej",
 		"url": "https://gitlab.com/mcepl/vis-open_rej",
 		"desc": "open the .rej file if present for the currently opened file."
+	},
+	{
+		"name": "vis-options-backport",
+		"url": "https://github.com/milhnl/vis-options-backport",
+		"desc": "make vis options available in lua for vis <=0.8"
 	},
 	{
 		"name": "vis-outdated",
