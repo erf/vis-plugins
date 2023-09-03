@@ -175,6 +175,12 @@ const plugins = [
 		"desc": "operators for adding/changing/deleting block delimiters"
 	},
 	{
+		"name": "vis-tables",
+		"url": "ssh://anon@thyssentishman.com/vis-tables",
+		"homepage": "https://www.thyssentishman.com/git/vis-tables/log.html",
+		"desc": "write tables"
+	},
+	{
 		"name": "vis-title",
 		"url": "https://github.com/erf/vis-title",
 		"desc": "set terminal title to current file"
