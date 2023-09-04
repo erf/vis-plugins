@@ -177,7 +177,7 @@ const plugins = [
 	{
 		"name": "vis-tables",
 		"url": "ssh://anon@thyssentishman.com/vis-tables",
-		"homepage": "https://www.thyssentishman.com/git/vis-tables/log.html",
+		"home": "https://www.thyssentishman.com/git/vis-tables/log.html",
 		"desc": "write tables"
 	},
 	{

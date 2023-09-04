@@ -8,6 +8,9 @@ let plugins_el = plugins.map((plugin) => {
 		el('p', plugin.desc, { class: 'description' }),
 		el('a', { href: plugin.url }, plugin.url),
 		el('span', ` (${plugin.file || 'init'})`),
+		plugin.home 
+			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
+			: el('span'),
 	]);
 })
 
@@ -25,6 +28,9 @@ let themes_el = themes.map((plugin) => {
 		]),
 		el('a', { href: plugin.url }, plugin.url),
 		el('span', ` (${plugin.file || 'init'})`),
+		plugin.home 
+			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
+			: el('span'),
 	]);
 })
 
