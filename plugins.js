@@ -62,6 +62,11 @@ const plugins = [
 		"desc": "set options automatically depending on filetype"
 	},
 	{
+		"name": "vis-format",
+		"repo": "https://github.com/milhnl/vis-format",
+		"desc": "integrate vis with external formatters"
+	},
+	{
 		"name": "vis-fzf-mru",
 		"repo": "https://github.com/peaceant/vis-fzf-mru",
 		"file": "fzf-mru",
