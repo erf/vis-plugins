@@ -99,6 +99,11 @@ const plugins = [
 		"desc": "basic vim-like insert mode completion."
 	},
 	{
+		"name": "vis-inotify",
+		"repo": "https://gitlab.com/muhq/vis-inotify",
+		"desc": "watch files using inotifywait"
+	},
+	{
 		"name": "vis-highlight",
 		"repo": "https://github.com/erf/vis-highlight",
 		"desc": "highlight multiple Lua patterns with optional style"
