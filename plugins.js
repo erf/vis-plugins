@@ -114,6 +114,11 @@ const plugins = [
 		"desc": "`gx` jump to the external link (with custom processor, if required), like in the vim’s netrw."
 	},
 	{
+		"name": "vis-lspc",
+		"repo": "https://gitlab.com/muhq/vis-lspc",
+		"desc": "language server protocol client"
+	},
+	{
 		"name": "vis-modelines",
 		"repo": "https://github.com/lutobler/vis-modelines",
 		"desc": "basic support for Vim modelines"
