@@ -16,6 +16,11 @@ const plugins = [
 		"desc": "install (and periodically update) vis plugins from Git repos"
 	},
 	{
+		"name": "vis-build",
+		"repo": "https://gitlab.com/muhq/vis-build",
+		"desc": "asynchronously run (build) commands"
+	},
+	{
 		"name": "vis-commentary",
 		"repo": "https://github.com/lutobler/vis-commentary",
 		"desc": "automatic block comments for most languages"
