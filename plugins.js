@@ -16,6 +16,11 @@ const plugins = [
 		"desc": "install (and periodically update) vis plugins from Git repos"
 	},
 	{
+		"name": "vis-build",
+		"repo": "https://gitlab.com/muhq/vis-build",
+		"desc": "asynchronously run (build) commands"
+	},
+	{
 		"name": "vis-commentary",
 		"repo": "https://github.com/lutobler/vis-commentary",
 		"desc": "automatic block comments for most languages"
@@ -94,6 +99,11 @@ const plugins = [
 		"desc": "basic vim-like insert mode completion."
 	},
 	{
+		"name": "vis-inotify",
+		"repo": "https://gitlab.com/muhq/vis-inotify",
+		"desc": "watch files using inotifywait"
+	},
+	{
 		"name": "vis-highlight",
 		"repo": "https://github.com/erf/vis-highlight",
 		"desc": "highlight multiple Lua patterns with optional style"
@@ -102,6 +112,11 @@ const plugins = [
 		"name": "vis-jump",
 		"repo": "https://gitlab.com/mcepl/vis-jump",
 		"desc": "`gx` jump to the external link (with custom processor, if required), like in the vim’s netrw."
+	},
+	{
+		"name": "vis-lspc",
+		"repo": "https://gitlab.com/muhq/vis-lspc",
+		"desc": "language server protocol client"
 	},
 	{
 		"name": "vis-modelines",
