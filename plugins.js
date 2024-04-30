@@ -11,6 +11,11 @@ const plugins = [
 		"desc": "make backups of current files before saving"
 	},
 	{
+		"name": "vis-bpts",
+		"repo": "https://codeberg.org/shitpostalotl/vis-bpts",
+		"desc": "insert mode using bullet-points for personal note taking"
+	},
+	{
 		"name": "vis-bundle",
 		"repo": "https://repo.or.cz/vis-bundle.git",
 		"desc": "install (and periodically update) vis plugins from Git repos"
