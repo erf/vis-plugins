@@ -83,11 +83,6 @@ const plugins = [
 		"desc": "open recently used files with fzf"
 	},
 	{
-		"name": "vis-fzf-open",
-		"repo": "https://git.sr.ht/~mcepl/vis-fzf-open",
-		"desc": "open files with fzf"
-	},
-	{
 		"name": "vis-go",
 		"repo": "https://gitlab.com/timoha/vis-go",
 		"file": "vis-go",
