@@ -520,5 +520,71 @@ const themes = [
     "repo": "https://gitlab.com/SZanko/vis-peaksea",
     "file": "peaksea",
     "image": "https://gitlab.com/SZanko/vis-peaksea/-/raw/master/img/peaksea-dark.jpg"
+  },
+  {
+    "name": "gigi",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "gigi",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/gigi.png"
+},
+  {
+    "name": "sciurbet",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "sciurbet",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/sciurbet.png"
+  },
+  {
+    "name": "moonlight-in-munich",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "moonlight-in-munich",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/moonlight-in-munich.png"
+  },
+  {
+    "name": "lemonsoda",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "lemonsoda",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/lemonsoda.png"
+  },
+  {
+    "name": "almostnord",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "almostnord",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/almostnord.png"
+  },
+  {
+    "name": "strange-morning",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "strange-morning",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/strange-morning.png"
+  },
+  {
+    "name": "strange-morning-warm",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "strange-morning-warm",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/strange-morning-warm.png"
+  },
+  {
+    "name": "madpop",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "madpop",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/madpop.png"
+  },
+  {
+    "name": "ampoule",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "ampoule",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/ampoule.png"
+  },
+  {
+    "name": "mondaymonday",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "mondaymonday",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/mondaymonday.png"
+  },
+  {
+    "name": "popular",
+    "repo": "https://github.com/scaramacai/vis-themes",
+    "file": "popular",
+    "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/popular.png"
   }
 ]
