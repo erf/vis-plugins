@@ -230,5 +230,10 @@ const plugins = [
 		"name": "vis-tasks",
 		"repo": "https://github.com/mpolitzer/vis-tasks",
 		"desc": "a simple todo list manager"
+	},
+	{
+		"name": "vis-tabautoconf",
+		"repo": "https://github.com/Nomarian/vis-tab-autoconf",
+		"desc": "Inherits tab settings from current file"
 	}
 ]
