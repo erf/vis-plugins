@@ -235,5 +235,10 @@ const plugins = [
 		"name": "vis-tabautoconf",
 		"repo": "https://github.com/Nomarian/vis-tab-autoconf",
 		"desc": "Inherits tab settings from current file"
+	},
+	{
+		"name": "vis-remove-trailing-whitespace",
+		"repo": "https://github.com/Nomarian/vis-remove-trailing-whitespace",
+		"desc": "Remove trailing whitespace on file save event"
 	}
 ]
