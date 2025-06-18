@@ -115,7 +115,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-jump",
-		"repo": "https://gitlab.com/mcepl/vis-jump",
+		"repo": "https://git.sr.ht/~mcepl/vis-jump",
 		"desc": "`gx` jump to the external link (with custom processor, if required), like in the vim’s netrw."
 	},
 	{
@@ -140,7 +140,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-open_rej",
-		"repo": "https://gitlab.com/mcepl/vis-open_rej",
+		"repo": "https://git.sr.ht/~mcepl/vis-open_rej",
 		"desc": "open the .rej file if present for the currently opened file."
 	},
 	{
