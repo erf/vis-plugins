@@ -245,5 +245,10 @@ const plugins = [
 		"name": "vis-remove-trailing-whitespace",
 		"repo": "https://github.com/Nomarian/vis-remove-trailing-whitespace",
 		"desc": "Remove trailing whitespace on file save event"
+	},
+	{
+		"name": "vis-resetconf",
+		"repo": "https://github.com/Nomarian/vis-resetconf",
+		"desc": "Command to reset configuration to the default"
 	}
 ]
