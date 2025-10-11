@@ -206,9 +206,9 @@ const plugins = [
 	},
 	{
 		"name": "vis-tables",
-		"repo": "ssh://anon@thyssentishman.com/vis-tables",
-		"home": "https://www.thyssentishman.com/git/vis-tables/log.html",
-		"desc": "write tables"
+		"repo": "ssh://anon@thyssentishman.com/ptt",
+		"home": "https://www.thyssentishman.com/git/ptt/log.html",
+		"desc": "an editor agnostic plain text table formatter with bindings for vis"
 	},
 	{
 		"name": "vis-title",
