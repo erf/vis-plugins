@@ -250,5 +250,10 @@ const plugins = [
 		"name": "vis-resetconf",
 		"repo": "https://github.com/Nomarian/vis-resetconf",
 		"desc": "Command to reset configuration to the default"
+	},
+	{
+		"name": "vis-info",
+		"repo": "https://github.com/Nomarian/vis-info",
+		"desc": "Command announces state"
 	}
 ]
