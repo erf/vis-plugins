@@ -258,7 +258,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-pipe_command_maker",
-		"repo": "https://github.com/Nomarian/vis-pipe_command_maker"
+		"repo": "https://github.com/Nomarian/vis-pipe_command_maker",
 		"desc": "Wrapper/closure for vis:pipe"
 	}
 ]
