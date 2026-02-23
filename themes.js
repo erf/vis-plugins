@@ -58,6 +58,30 @@ const themes = [
     "repo": "https://github.com/samlwood/vis-gruvbox",
     "file": "gruvbox",
     "image": "https://raw.githubusercontent.com/samlwood/vis-gruvbox/master/screenshot.png"
+  },  
+  {
+    "name": "aizen",
+    "repo": "https://codeberg.org/wf/colors",
+    "file": "aizen",
+    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/aizen.png"
+  },
+  {
+    "name": "iceberg",
+    "repo": "https://codeberg.org/wf/colors",
+    "file": "iceberg",
+    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/iceberg.png"
+  },
+  {
+    "name": "jubi",
+    "repo": "https://codeberg.org/wf/colors",
+    "file": "jubi",
+    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/jubi.png"
+  },
+  {
+    "name": "wryan",
+    "repo": "https://codeberg.org/wf/colors",
+    "file": "wryan",
+    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/jubi.png"
   },
   {
     "name": "base16-3024",
