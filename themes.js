@@ -81,7 +81,7 @@ const themes = [
     "name": "wryan",
     "repo": "https://codeberg.org/wf/colors",
     "file": "wryan",
-    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/jubi.png"
+    "image": "https://codeberg.org/wf/colors/raw/branch/main/.assets/wryan.png"
   },
   {
     "name": "base16-3024",
