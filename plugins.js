@@ -56,6 +56,11 @@ const plugins = [
 		"desc": "automatically parse and apply `.editorconfig` files"
 	},
 	{
+		"name": "vis-eval",
+		"repo": "https://codeberg.org/wf/vis-eval",
+		"desc": "evaluate an arbitrary piece of Lua"
+	},
+	{
 		"name": "vis-exchange",
 		"repo": "https://repo.or.cz/vis-exchange.git",
 		"desc": "operator for swapping a pair of ranges"
@@ -167,6 +172,11 @@ const plugins = [
 		"name": "vis-plug",
 		"repo": "https://github.com/erf/vis-plug",
 		"desc": "a minimal plugin (and theme) manager for vis"
+	},
+	{
+		"name": "vis-paw",
+		"repo": "https://codeberg.org/wf/vis-paw",
+		"desc": "an alternative statusbar for vis"
 	},
 	{
 		"name": "vis-quickfix",
