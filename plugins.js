@@ -27,7 +27,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-commentary",
-		"repo": "https://github.com/lutobler/vis-commentary",
+		"repo": "https://github.com/Nomarian/vis-commentary",
 		"desc": "automatic block comments for most languages"
 	},
 	{
