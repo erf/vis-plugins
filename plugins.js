@@ -22,7 +22,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-build",
-		"repo": "https://gitlab.com/muhq/vis-build",
+		"repo": "https://codeberg.org/muhq/vis-build",
 		"desc": "asynchronously run (build) commands"
 	},
 	{
@@ -110,7 +110,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-inotify",
-		"repo": "https://gitlab.com/muhq/vis-inotify",
+		"repo": "https://codeberg.org/muhq/vis-inotify",
 		"desc": "watch files using inotifywait"
 	},
 	{
@@ -125,12 +125,12 @@ const plugins = [
 	},
 	{
 		"name": "vis-lockfiles",
-		"repo": "https://gitlab.com/muhq/vis-lockfiles",
+		"repo": "https://codeberg.org/muhq/vis-lockfiles",
 		"desc": "detect concurrent edits"
 	},
 	{
 		"name": "vis-lspc",
-		"repo": "https://gitlab.com/muhq/vis-lspc",
+		"repo": "https://codeberg.org/muhq/vis-lspc",
 		"desc": "language server protocol client"
 	},
 	{
@@ -200,7 +200,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-spellcheck",
-		"repo": "https://gitlab.com/muhq/vis-spellcheck",
+		"repo": "https://codeberg.org/muhq/vis-spellcheck",
 		"desc": "syntax aware spellchecking"
 	},
 	{
