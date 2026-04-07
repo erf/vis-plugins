@@ -1,5 +1,10 @@
 const plugins = [
 	{
+		"name": "vis-autoclose",
+		"repo": "https://codeberg.org/luxanna/vis-autoclose",
+		"desc": "automatically close/remove brackets"
+	},
+	{
 		"name": "vis-backspace",
 		"repo": "https://github.com/milhnl/vis-backspace",
 		"desc": "remove backspaces with alignment to tabwidth, like vim's softtabstop"
