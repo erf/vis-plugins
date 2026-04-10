@@ -61,6 +61,11 @@ const plugins = [
 		"desc": "automatically parse and apply `.editorconfig` files"
 	},
 	{
+		"name": "vis-editorconfig-options",
+		"repo": "https://github.com/milhnl/vis-editorconfig-options",
+		"desc": ".editorconfig support without external dependencies"
+	},
+	{
 		"name": "vis-eval",
 		"repo": "https://codeberg.org/wf/vis-eval",
 		"desc": "evaluate an arbitrary piece of Lua"
