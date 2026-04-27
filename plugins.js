@@ -282,6 +282,11 @@ const plugins = [
 		"desc": "Wrapper/closure for vis:pipe"
 	},
 	{
+		"name": "vis-autoinserthb",
+		"repo": "https://github.com/Nomarian/vis-autoinserthb",
+		"desc": "On new file open, auto inserts correct #!"
+	},
+	{
 		"name": "vis-command",
 		"repo": "https://github.com/Nomarian/vis-command",
 		"desc": "Run command, output goes to new window"
