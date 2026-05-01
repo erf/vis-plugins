@@ -290,5 +290,10 @@ const plugins = [
 		"name": "vis-command",
 		"repo": "https://github.com/Nomarian/vis-command",
 		"desc": "Run command, output goes to new window"
+	},
+	{
+		"name": "vis-modal",
+		"repo": "https://git.symlinx.net/vis-modal",
+		"desc": "A status line colorizer"
 	}
 ]
