@@ -295,5 +295,10 @@ const plugins = [
 		"name": "vis-modal",
 		"repo": "https://git.symlinx.net/vis-modal",
 		"desc": "A status line colorizer"
+	},
+	{
+		"name": "offline",
+		"repo": "https://git.teesh.dev/teesh/offline",
+		"desc": "An easier way to make status lines"
 	}
 ]
