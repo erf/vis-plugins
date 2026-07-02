@@ -300,5 +300,10 @@ const plugins = [
 		"name": "offline",
 		"repo": "https://git.teesh.dev/teesh/offline",
 		"desc": "An easier way to make status lines"
+	},
+	{
+		"name": "vis-korea-ime",
+		"repo": "https://codeberg.org/ywbird/vis-korea-ime",
+		"desc": "Korean IME for vis editor"
 	}
 ]
