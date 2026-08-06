@@ -36,6 +36,11 @@ const plugins = [
 		"desc": "automatic block comments for most languages"
 	},
 	{
+		"name": "vis-caseswitch",
+		"repo": "https://github.com/Nomarian/vis-caseswitch",
+		"desc": "Changes case of selection PascalCase, camelCase, etc"
+	},
+	{
 		"name": "vis-complete-line",
 		"repo": "https://repo.or.cz/vis-complete-line.git",
 		"desc": "`<C-e>`, `<C-y>`, and `<C-x><C-l>`, like in vim"
