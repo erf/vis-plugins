@@ -61,6 +61,11 @@ const plugins = [
 		"desc": "remember last cursor position per file"
 	},
 	{
+		"name": "vis-cursormode",
+		"repo": "https://github.com/ste1ee-dot/vis-cursormode",
+		"desc": "add different cursor for insert/replace mode"
+	},
+	{
 		"name": "vis-editorconfig",
 		"repo": "https://github.com/vktec/vis-editorconfig",
 		"desc": "automatically parse and apply `.editorconfig` files"
