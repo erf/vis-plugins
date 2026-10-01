@@ -124,6 +124,11 @@ const plugins = [
 		"desc": "`gf` and `<C-w>f`, similar to vim's"
 	},
 	{
+		"name": "vis-grep",
+		"repo": "https://github.com/karimKandil0/vis-grep",
+		"desc": "search across files with ripgrep and jump to matches"
+	},
+	{
 		"name": "vis-ins-completion",
 		"repo": "https://github.com/jpaulogg/vis-ins-completion",
 		"desc": "basic vim-like insert mode completion."
