@@ -203,6 +203,11 @@ const plugins = [
 		"repo": "https://repo.or.cz/vis-quickfix.git",
 		"desc": "most of vim's QuickFix commands"
 	},
+    {
+		"name": "vis-restree",
+		"repo": "https://github.com/kamil-koziol/vis-restree",
+		"desc": "Plugin for the lightweight restree API client"
+    },
 	{
 		"name": "vis-shebang",
 		"repo": "https://github.com/e-zk/vis-shebang",
