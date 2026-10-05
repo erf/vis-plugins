@@ -109,7 +109,7 @@ const plugins = [
 	},
 	{
 		"name": "vis-fzf-open",
-		"repo": "https://git.sr.ht/~mcepl/vis-fzf-open",
+		"repo": "https://codefloe.com/mcepl/vis-fzf-open",
 		"desc": "open files with fzf"
 	},
 	{
