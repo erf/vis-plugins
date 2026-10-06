@@ -320,5 +320,10 @@ const plugins = [
 		"name": "vis-korea-ime",
 		"repo": "https://codeberg.org/ywbird/vis-korea-ime",
 		"desc": "Korean IME for vis editor"
+	},
+	{
+		"name": "treeview",
+		"repo": "https://github.com/stalker57241/treeview",
+		"desc": "Tree view of files for vis editor"
 	}
 ]
