@@ -17,26 +17,20 @@
 	<p>Plugins can be installed <a href="https://github.com/martanne/vis/wiki/Plugins">manually</a> or using <a
 			href="https://github.com/erf/vis-plug">vis-plug</a>.</p>
 	<blockquote>Originally based on the <a href="https://github.com/martanne/vis/wiki">vis wiki</a>.</blockquote>
-	<br>
 
-	<form>
+	<nav>
+		<button id="show-plugins" onclick="set_plugin_type('plugin')">Plugins</button>
+		<button id="show-themes" onclick="set_plugin_type('theme')">Themes</button>
+		<span id="count"></span>
+		<button id="theme-toggle" aria-label="Toggle dark mode"></button>
+	</nav>
 
-		<label for="show-plugins">Plugins</label>
-		<input type="radio" id="show-plugins" name="plugin-type" onclick="set_plugin_type('plugin')" autocomplete="off">
+	<input type="search" id="search" placeholder="Search ( / )" aria-label="Search" autocomplete="off" autofocus>
 
-		<label for="show-themes">Themes</label>
-		<input type="radio" id="show-themes" name="plugin-type" onclick="set_plugin_type('theme')" autocomplete="off">
-
-	</form>
-
-	<br />
-
-	<input type="text" id="search" placeholder="Search">
-
-	<div id="plugins-container">
-		<h2 id="plugin-header">Plugins</h2>
+	<main>
 		<ul id="plugins" class="container"></ul>
-	</div>
+		<p id="empty" hidden>No results.</p>
+	</main>
 
 	<script type="text/javascript" src="plugins.js"></script>
 	<script type="text/javascript" src="themes.js"></script>
