@@ -6,7 +6,8 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -60,4 +61,11 @@ ul {
 
 .copy:hover {
 	background-color: #d0d0d0;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid #ccc;
+	color: #888;
 }
