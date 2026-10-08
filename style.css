@@ -1,25 +1,92 @@
-*,
-body {
+:root {
+	color-scheme: light dark;
+	--muted: #888;
+	--border: #ccc;
+	--btn: #f0f0f0;
+	--btn-hover: #d0d0d0;
+}
+
+:root[data-theme="light"] {
+	color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	--border: #444;
+	--btn: #2a2a2a;
+	--btn-hover: #3a3a3a;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--border: #444;
+		--btn: #2a2a2a;
+		--btn-hover: #3a3a3a;
+	}
+}
+
+* {
 	font-weight: normal;
-	padding-left: 2pt;
-	padding-top: 2pt;
 	font-family: 'Courier New', Courier, monospace;
 }
 
-h1,
-h2 {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
 ul {
 	list-style: none;
-	padding: 0px;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 1.5rem 0 0.75rem;
+}
+
+nav button {
+	font-size: 1.2em;
+	padding: 0 0 2px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+nav button[aria-pressed="true"] {
+	border-bottom-color: currentColor;
+}
+
+#count {
+	margin-left: auto;
+	color: var(--muted);
+}
+
+#theme-toggle {
+	background: none;
+	border: none;
+	color: inherit;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+#search {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px;
+	margin-bottom: 1rem;
+	font-size: 1em;
 }
 
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 8pt;
+	gap: 12pt;
 }
 
 .item {
@@ -27,21 +94,23 @@ ul {
 }
 
 .name {
-	font-weight: bold;
+	font-size: 1.15em;
 }
 
 .description {
 	font-style: italic;
 }
 
+.meta {
+	color: var(--muted);
+	font-size: 0.9em;
+}
+
 .image-container {
 	overflow: hidden;
 	width: 300px;
+	max-width: 100%;
 	height: 200px;
-}
-
-.image-container:hover {
-	transform: scale(1.2)
 }
 
 .image {
@@ -53,19 +122,20 @@ ul {
 .copy {
 	margin-left: 8px;
 	margin-bottom: 8px;
-	background-color: #f0f0f0;
+	background-color: var(--btn);
+	color: inherit;
 	border-radius: 1px;
 	border-width: 0px;
 	transition-duration: 0.3s;
 }
 
 .copy:hover {
-	background-color: #d0d0d0;
+	background-color: var(--btn-hover);
 }
 
 blockquote {
 	margin: 1em 0;
 	padding-left: 1em;
-	border-left: 3px solid #ccc;
-	color: #888;
+	border-left: 3px solid var(--border);
+	color: var(--muted);
 }
