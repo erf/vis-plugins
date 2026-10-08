@@ -106,6 +106,27 @@ nav button[aria-pressed="true"] {
 	font-size: 0.9em;
 }
 
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-top: 6px;
+}
+
+.tag {
+	padding: 1px 6px;
+	font-size: 0.8em;
+	background: none;
+	color: var(--muted);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.tag:hover {
+	background-color: var(--btn);
+}
+
 .image-container {
 	overflow: hidden;
 	width: 300px;
