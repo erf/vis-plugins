@@ -17,7 +17,8 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "repo": "https://github.com/user/vis-foo",
   "desc": "what it does",
   "file": "foo",   // optional, module to load if not the default
-  "home": "https://..."  // optional, extra link
+  "home": "https://...",  // optional, extra link
+  "tags": ["linux"]       // optional, short notes like platform ("linux", "macos") or dependencies
 }
 
 // themes.js

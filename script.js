@@ -10,6 +10,7 @@ let plugins_el = plugins.map((plugin) => {
 		plugin.home 
 			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
 			: el('span'),
+		tag_line(plugin),
 	]);
 })
 
@@ -29,6 +30,7 @@ let themes_el = themes.map((plugin) => {
 		plugin.home 
 			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
 			: el('span'),
+		tag_line(plugin),
 	]);
 })
 
@@ -43,6 +45,18 @@ function repo_line(plugin) {
 		el('a', { href: plugin.repo }, host(plugin.repo)),
 		el('span', plugin.file ? ` (${plugin.file})` : ''),
 	])
+}
+
+// optional tags, e.g. platform notes like 'linux' or 'macos'
+// clicking a tag searches for it
+function tag_line(plugin) {
+	if (!plugin.tags?.length) return el('span')
+	return el('div', { class: 'tags' }, plugin.tags.map((tag) =>
+		el('button', tag, { class: 'tag' }, { click: () => {
+			get('search').value = tag
+			search()
+		} })
+	))
 }
 
 // copy a vis-plug config line to the clipboard
