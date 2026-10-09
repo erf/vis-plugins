@@ -4,6 +4,8 @@ A collection of plugins and themes for the [vis text editor](https://github.com/
 
 Browse and search them on the [web page](https://erf.github.io/vis-plugins/).
 
+Use the copy button to get a config line for [vis-plug](https://github.com/erf/vis-plug).
+
 You are welcome to contribute [plugins](plugins.js) / [themes](themes.js) or to improve the web page.
 
 ## Contributing
@@ -29,7 +31,5 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "image": "https://.../screenshot.png"
 }
 ```
-
-The copy button on the page puts a [vis-plug](https://github.com/erf/vis-plug) config line on the clipboard. Themes get `theme = true`.
 
 > The owner of this repository disclaims all liability regarding the use of third-party plugins on this site.
