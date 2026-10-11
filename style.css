@@ -93,11 +93,27 @@ nav button[aria-pressed="true"] {
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 12pt;
+	gap: 2rem 1.5rem;
 }
 
 .item {
-	padding: 6pt;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.item[hidden] {
+	display: none;
+}
+
+.item p {
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
 }
 
 .name {
@@ -117,7 +133,6 @@ nav button[aria-pressed="true"] {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
-	margin-top: 6px;
 }
 
 .tag {
@@ -148,8 +163,6 @@ nav button[aria-pressed="true"] {
 }
 
 .copy {
-	margin-left: 8px;
-	margin-bottom: 8px;
 	background-color: var(--btn);
 	color: inherit;
 	border-radius: 1px;

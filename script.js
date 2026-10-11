@@ -3,15 +3,12 @@ plugins.sort((a, b) => a.name.localeCompare(b.name));
 
 let plugins_el = plugins.map((plugin) => {
 	return el('li', { class: 'item' }, [
-		el('span', plugin.name, { class: 'name' }),
-		el('button', 'copy', { class: 'copy' }, { click: (e) => copy(plugin, false, e.target) }),
+		header(plugin, false),
 		el('p', plugin.desc, { class: 'description' }),
 		repo_line(plugin),
-		plugin.home 
-			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
-			: el('span'),
+		home_line(plugin),
 		tag_line(plugin),
-	]);
+	].filter(Boolean));
 })
 
 // themes.js
@@ -19,20 +16,31 @@ themes.sort((a, b) => a.name.localeCompare(b.name));
 
 let themes_el = themes.map((plugin) => {
 	return el('li', { class: 'item' }, [
-		el('span', plugin.name, { class: 'name' }),
-		el('button', 'copy', { class: 'copy' }, { click: (e) => copy(plugin, true, e.target) }),
+		header(plugin, true),
 		el('div', { class: 'image-container' }, [
 			el('img', { src: plugin.image, class: 'image', loading: 'lazy', alt: `${plugin.name} screenshot` }, {
 				click: () => { window.open(plugin.image, '_blank').focus(); }
 			}),
 		]),
 		repo_line(plugin),
-		plugin.home 
-			? el('p', [ el('a', { href: plugin.home }, plugin.home) ])
-			: el('span'),
+		home_line(plugin),
 		tag_line(plugin),
-	]);
+	].filter(Boolean));
 })
+
+// name with the copy button next to it
+function header(plugin, theme) {
+	return el('div', { class: 'header' }, [
+		el('span', plugin.name, { class: 'name' }),
+		el('button', 'copy', { class: 'copy' }, { click: (e) => copy(plugin, theme, e.target) }),
+	])
+}
+
+// optional home page link
+function home_line(plugin) {
+	if (!plugin.home) return null
+	return el('div', [ el('a', { href: plugin.home }, plugin.home) ])
+}
 
 // repo url without the scheme
 function host(url) {
@@ -50,7 +58,7 @@ function repo_line(plugin) {
 // optional tags, e.g. platform notes like 'linux' or 'macos'
 // clicking a tag searches for it
 function tag_line(plugin) {
-	if (!plugin.tags?.length) return el('span')
+	if (!plugin.tags?.length) return null
 	return el('div', { class: 'tags' }, plugin.tags.map((tag) =>
 		el('button', tag, { class: 'tag' }, { click: () => {
 			get('search').value = tag
