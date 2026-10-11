@@ -319,6 +319,7 @@ const plugins = [
 	{
 		"name": "treeview",
 		"repo": "https://github.com/stalker57241/treeview",
-		"desc": "Tree view of files for vis editor"
+		"desc": "Tree view of files for vis editor",
+		"tags": ["linux", "dep:luafilesystem", "qol", "quality of life"]
 	}
 ]
