@@ -320,6 +320,12 @@ const plugins = [
 		"name": "treeview",
 		"repo": "https://github.com/stalker57241/treeview",
 		"desc": "Tree view of files for vis editor",
-		"tags": ["linux", "dep:luafilesystem", "qol", "quality of life"]
+		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview", "qol", "quality of life"]
+	},
+	{
+		"name": "tabview",
+		"repo": "https://github.com/stalker57241/tabview",
+		"desc": "Tab view allows to store files in tabs at background",
+		"tags": ["qol", "quality of life"]
 	}
 ]
