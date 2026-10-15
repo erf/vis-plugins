@@ -610,5 +610,11 @@ const themes = [
     "repo": "https://github.com/scaramacai/vis-themes",
     "file": "popular",
     "image": "https://raw.githubusercontent.com/scaramacai/vis-themes/master/images/popular.png"
+  },
+  {
+    "name": "gruber-vis",
+    "repo": "https://codeberg.org/theidioticdev/gruber-vis",
+    "file": "gruber-vis",
+    "image": "https://codeberg.org/theidioticdev/gruber-vis/src/branch/main/preview.png"
   }
 ]
