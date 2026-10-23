@@ -327,5 +327,11 @@ const plugins = [
 		"repo": "https://github.com/stalker57241/tabview",
 		"desc": "Tab view allows to store files in tabs at background",
 		"tags": ["qol", "quality of life"]
+	},
+	{
+		"name": "viscosity",
+		"repo": "https://codeberg.org/iambird/viscosity",
+		"desc": "An oil-style file tree for the martanne/vis editor",
+		"tags": ["qol"]
 	}
 ]
