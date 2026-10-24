@@ -326,12 +326,18 @@ const plugins = [
 		"name": "tabview",
 		"repo": "https://github.com/stalker57241/tabview",
 		"desc": "Tab view allows to store files in tabs at background",
-		"tags": ["qol", "quality of life"]
+	  "tags": ["qol", "quality of life"]
 	},
 	{
-	       "name": "vis-go-back-on-esc",
-	       "repo": "https://github.com/FinGu/vis-go-back-on-esc",
-	       "desc": "Allows you to have the vim behaviour of going back a character on esc",
-	       "tags": ["qol", "quality of life"]
-	}
+	  "name": "vis-go-back-on-esc",
+    "repo": "https://github.com/FinGu/vis-go-back-on-esc",
+	  "desc": "Allows you to have the vim behaviour of going back a character on esc",
+	  "tags": ["qol", "quality of life"]
+	},
+  {
+    "name": "viscosity",
+		"repo": "https://codeberg.org/iambird/viscosity",
+		"desc": "An oil-style file tree for the martanne/vis editor",
+		"tags": ["qol"]
+  }
 ]
