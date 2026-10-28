@@ -329,6 +329,12 @@ const plugins = [
 		"tags": ["qol", "quality of life"]
 	},
 	{
+		"name": "tabdisplay",
+		"repo": "https://github.com/stalker57241/tabdisplay",
+		"desc": "Frontend for tabview",
+		"tags": ["qol", "quality of life", "dep:tabview", "frontend"]
+	},
+	{
 	       "name": "vis-go-back-on-esc",
 	       "repo": "https://github.com/FinGu/vis-go-back-on-esc",
 	       "desc": "Allows you to have the vim behaviour of going back a character on esc",
