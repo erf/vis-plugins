@@ -317,21 +317,31 @@ const plugins = [
 		"desc": "Korean IME for vis editor"
 	},
 	{
+		"name": "plugin_register",
+		"repo": "https://github.com/stalker57241/plugin_register",
+		"desc": "Plugin register util for better integration between plugins",
+		"home": "https://github.com/stalker57241/plugin_register/blob/general/API.md"
+		"tags": ["util", "qol"]
+	},
+	{
 		"name": "treeview",
 		"repo": "https://github.com/stalker57241/treeview",
 		"desc": "Tree view of files for vis editor",
+		"home": "https://github.com/stalker57241/treeview/blob/general/API.md",
 		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview", "qol", "quality of life"]
 	},
 	{
 		"name": "tabview",
 		"repo": "https://github.com/stalker57241/tabview",
 		"desc": "Tab view allows to store files in tabs at background",
+		"home": "https://github.com/stalker57241/tabview/blob/general/API.md",
 		"tags": ["qol", "quality of life"]
 	},
 	{
 		"name": "tabdisplay",
 		"repo": "https://github.com/stalker57241/tabdisplay",
 		"desc": "Frontend for tabview",
+		"home": "https://github.com/stalker57241/tabdisplay/blob/general/API.md",
 		"tags": ["qol", "quality of life", "dep:tabview", "frontend"]
 	},
 	{
