@@ -320,7 +320,7 @@ const plugins = [
 		"name": "plugin_register",
 		"repo": "https://github.com/stalker57241/plugin_register",
 		"desc": "Plugin register util for better integration between plugins",
-		"home": "https://github.com/stalker57241/plugin_register/blob/general/API.md"
+		"home": "https://github.com/stalker57241/plugin_register/blob/general/API.md",
 		"tags": ["util", "qol"]
 	},
 	{
