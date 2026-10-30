@@ -355,5 +355,11 @@ const plugins = [
 	       "repo": "https://github.com/FinGu/vis-go-back-on-esc",
 	       "desc": "Allows you to have the vim behaviour of going back a character on esc",
 	       "tags": ["qol", "quality of life"]
+	},
+	{
+		"name": "viscosity",
+		"repo": "https://codeberg.org/iambird/viscosity",
+		"desc": "An oil-style file tree for the martanne/vis editor",
+		"tags": ["qol"]
 	}
 ]
