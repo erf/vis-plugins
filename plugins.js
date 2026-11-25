@@ -320,58 +320,51 @@ const plugins = [
 		"name": "plugin_register",
 		"repo": "https://github.com/stalker57241/plugin_register",
 		"desc": "Plugin register util for better integration between plugins",
-		"home": "https://github.com/stalker57241/plugin_register/blob/general/API.md",
-		"tags": ["util", "qol"]
+		"home": "https://github.com/stalker57241/plugin_register/blob/general/API.md"
 	},
 	{
 		"name": "treeview",
 		"repo": "https://github.com/stalker57241/treeview",
 		"desc": "Tree view of files for vis editor",
 		"home": "https://github.com/stalker57241/treeview/blob/general/API.md",
-		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview", "qol"]
+		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview"]
 	},
 	{
 		"name": "tabview",
 		"repo": "https://github.com/stalker57241/tabview",
 		"desc": "Tab view allows to store files in tabs at background",
-		"home": "https://github.com/stalker57241/tabview/blob/general/API.md",
-		"tags": ["qol"]
+		"home": "https://github.com/stalker57241/tabview/blob/general/API.md"
 	},
 	{
 		"name": "tabdisplay",
 		"repo": "https://github.com/stalker57241/tabdisplay",
 		"desc": "Frontend for tabview",
 		"home": "https://github.com/stalker57241/tabdisplay/blob/general/API.md",
-		"tags": ["qol", "dep:tabview", "frontend"]
+		"tags": ["dep:tabview"]
 	},
 	{
 		"name": "tabconfig",
 		"repo": "https://github.com/stalker57241/tabconfig",
-		"desc": "Configuration for treeview, tabview, and tabdisplay",
-		"tags": ["qol", "config", "bundle"]
+		"desc": "Configuration for treeview, tabview, and tabdisplay"
 	},
 	{
-	       "name": "vis-go-back-on-esc",
-	       "repo": "https://github.com/FinGu/vis-go-back-on-esc",
-	       "desc": "Allows you to have the vim behaviour of going back a character on esc",
-		"tags": ["qol"]
+		"name": "vis-go-back-on-esc",
+		"repo": "https://github.com/FinGu/vis-go-back-on-esc",
+		"desc": "Allows you to have the vim behaviour of going back a character on esc"
 	},
 	{
 		"name": "viscosity",
 		"repo": "https://codeberg.org/iambird/viscosity",
-		"desc": "An oil-style file tree for the martanne/vis editor",
-		"tags": ["qol"]
+		"desc": "An oil-style file tree for the martanne/vis editor"
 	},
 	{
 		"name": "vis-oil",
 		"repo": "https://github.com/newor0599/vis-oil",
-		"desc": "A file manager for vis text editor inspired by oil.nvim",
-		"tags": ["qol"]
+		"desc": "A file manager for vis text editor inspired by oil.nvim"
 	},
 	{
 		"name": "vis-prevfiles",
 		"repo": "https://github.com/mapperr/vis-prevfiles",
-		"desc": "A vis plugin to go back to previous files: C-^ and more.",
-		"tags": ["qol"]
+		"desc": "A vis plugin to go back to previous files: C-^ and more."
 	}
 ]

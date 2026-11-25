@@ -22,7 +22,7 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "desc": "what it does",
   "file": "foo",          // optional module to load if not the default init.lua
   "home": "https://...",  // optional link to a homepage, docs etc.
-  "tags": ["linux"]       // optional tags, e.g. platform ("linux", "macos") or a dependency; clickable on the page
+  "tags": ["linux"]       // optional, see Tags below; clickable on the page
 }
 
 // themes.js
@@ -35,6 +35,17 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "tags": ["light"]                      // optional, as above
 }
 ```
+
+### Tags
+
+Tags are optional. Use them for facts a user might want to know or filter on before installing, not to describe what the plugin does (that's what `desc` is for). Prefer these:
+
+- platform: `linux`, `macos`, `windows`, `bsd`
+- dependency: `dep:<name>`, e.g. `dep:luafilesystem`
+- optional dependency: `opt-dep:<name>`
+- themes: `light` or `dark`
+
+Keep tags lowercase without spaces, and use at most a few per entry. Vague categories like `qol` or `util` don't say much and may be left out.
 
 The copy button turns an entry into a vis-plug config line, for example:
 
