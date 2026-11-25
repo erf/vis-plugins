@@ -1,9 +1,10 @@
 :root {
 	color-scheme: light dark;
-	--muted: #888;
+	--muted: #666;
 	--border: #ccc;
 	--btn: #f0f0f0;
 	--btn-hover: #d0d0d0;
+	--link: #0b57d0;
 }
 
 :root[data-theme="light"] {
@@ -12,16 +13,20 @@
 
 :root[data-theme="dark"] {
 	color-scheme: dark;
+	--muted: #999;
 	--border: #444;
 	--btn: #2a2a2a;
 	--btn-hover: #3a3a3a;
+	--link: #8ab4f8;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme="light"]) {
+		--muted: #999;
 		--border: #444;
 		--btn: #2a2a2a;
 		--btn-hover: #3a3a3a;
+		--link: #8ab4f8;
 	}
 }
 
@@ -41,6 +46,12 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 1rem;
+	line-height: 1.4;
+}
+
+a,
+a:visited {
+	color: var(--link);
 }
 
 ul {
@@ -85,9 +96,18 @@ nav button[aria-pressed="true"] {
 #search {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 6px;
+	padding: 8px 10px;
 	margin-bottom: 1rem;
 	font-size: 1em;
+	background: none;
+	color: inherit;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+}
+
+#search:focus {
+	outline: none;
+	border-color: var(--muted);
 }
 
 .container {
@@ -99,7 +119,7 @@ nav button[aria-pressed="true"] {
 .item {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 8px;
 }
 
 .item[hidden] {
@@ -118,6 +138,7 @@ nav button[aria-pressed="true"] {
 
 .name {
 	font-size: 1.2em;
+	font-weight: 600;
 }
 
 .description {
@@ -127,6 +148,19 @@ nav button[aria-pressed="true"] {
 .meta {
 	color: var(--muted);
 	font-size: 0.9em;
+	overflow-wrap: anywhere;
+}
+
+.meta a {
+	text-decoration: none;
+}
+
+.meta .home {
+	color: inherit;
+}
+
+.meta a:hover {
+	text-decoration: underline;
 }
 
 .tags {
@@ -163,10 +197,13 @@ nav button[aria-pressed="true"] {
 }
 
 .copy {
+	padding: 1px 6px;
+	font-size: 0.8em;
 	background-color: var(--btn);
 	color: inherit;
-	border-radius: 1px;
-	border-width: 0px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
 	transition-duration: 0.3s;
 }
 

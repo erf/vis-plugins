@@ -39,7 +39,7 @@ function header(plugin, theme) {
 // optional home page link
 function home_line(plugin) {
 	if (!plugin.home) return null
-	return el('div', [ el('a', { href: plugin.home }, plugin.home) ])
+	return el('div', { class: 'meta' }, [ el('a', { href: plugin.home, class: 'home' }, 'homepage') ])
 }
 
 // repo url without the scheme

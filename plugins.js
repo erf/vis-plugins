@@ -328,33 +328,33 @@ const plugins = [
 		"repo": "https://github.com/stalker57241/treeview",
 		"desc": "Tree view of files for vis editor",
 		"home": "https://github.com/stalker57241/treeview/blob/general/API.md",
-		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview", "qol", "quality of life"]
+		"tags": ["linux", "dep:luafilesystem", "opt-dep:tabview", "qol"]
 	},
 	{
 		"name": "tabview",
 		"repo": "https://github.com/stalker57241/tabview",
 		"desc": "Tab view allows to store files in tabs at background",
 		"home": "https://github.com/stalker57241/tabview/blob/general/API.md",
-		"tags": ["qol", "quality of life"]
+		"tags": ["qol"]
 	},
 	{
 		"name": "tabdisplay",
 		"repo": "https://github.com/stalker57241/tabdisplay",
 		"desc": "Frontend for tabview",
 		"home": "https://github.com/stalker57241/tabdisplay/blob/general/API.md",
-		"tags": ["qol", "quality of life", "dep:tabview", "frontend"]
+		"tags": ["qol", "dep:tabview", "frontend"]
 	},
 	{
 		"name": "tabconfig",
 		"repo": "https://github.com/stalker57241/tabconfig",
 		"desc": "Configuration for treeview, tabview, and tabdisplay",
-		"tags": ["qol", "quality of life", "config", "bundle"]
+		"tags": ["qol", "config", "bundle"]
 	},
 	{
 	       "name": "vis-go-back-on-esc",
 	       "repo": "https://github.com/FinGu/vis-go-back-on-esc",
 	       "desc": "Allows you to have the vim behaviour of going back a character on esc",
-	       "tags": ["qol", "quality of life"]
+		"tags": ["qol"]
 	},
 	{
 		"name": "viscosity",
