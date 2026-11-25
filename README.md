@@ -20,9 +20,9 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "name": "vis-foo",
   "repo": "https://github.com/user/vis-foo",
   "desc": "what it does",
-  "file": "foo",   // optional, module to load if not the default
-  "home": "https://...",  // optional, extra link
-  "tags": ["linux"]       // optional, short notes like platform ("linux", "macos") or dependencies
+  "file": "foo",          // optional module to load if not the default init.lua
+  "home": "https://...",  // optional link to homepage etc.
+  "tags": ["linux"]       // optional tag to describe what it's for or platform etc.
 }
 
 // themes.js
@@ -30,7 +30,7 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "name": "foo",
   "repo": "https://github.com/user/vis-foo",
   "file": "foo",
-  "image": "https://.../screenshot.png"
+  "image": "https://.../screenshot.png"       // a link to a screenshot of code using theme
 }
 ```
 
