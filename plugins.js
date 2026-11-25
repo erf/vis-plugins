@@ -361,5 +361,11 @@ const plugins = [
 		"repo": "https://codeberg.org/iambird/viscosity",
 		"desc": "An oil-style file tree for the martanne/vis editor",
 		"tags": ["qol"]
+	},
+	{
+		"name": "vis-oil",
+		"repo": "https://github.com/newor0599/vis-oil",
+		"desc": "A file manager for vis text editor inspired by oil.nvim",
+		"tags": ["qol"]
 	}
 ]
