@@ -10,6 +10,8 @@ You are welcome to contribute [plugins](plugins.js) / [themes](themes.js) or to 
 
 ## Contributing
 
+Please open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes.
+
 Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sorts them by name, so they can go anywhere in the list.
 
 ```js
