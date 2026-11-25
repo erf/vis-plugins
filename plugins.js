@@ -367,5 +367,11 @@ const plugins = [
 		"repo": "https://github.com/newor0599/vis-oil",
 		"desc": "A file manager for vis text editor inspired by oil.nvim",
 		"tags": ["qol"]
+	},
+	{
+		"name": "vis-prevfiles",
+		"repo": "https://github.com/mapperr/vis-prevfiles",
+		"desc": "A vis plugin to go back to previous files: C-^ and more.",
+		"tags": ["qol"]
 	}
 ]
