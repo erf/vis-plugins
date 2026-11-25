@@ -66,6 +66,11 @@ const plugins = [
 		"desc": "add different cursor for insert/replace mode"
 	},
 	{
+		"name": "vis-insertbar",
+		"repo": "https://github.com/erf/vis-insertbar",
+		"desc": "blinking bar cursor in insert mode"
+	},
+	{
 		"name": "vis-editorconfig",
 		"repo": "https://github.com/vktec/vis-editorconfig",
 		"desc": "automatically parse and apply `.editorconfig` files"
