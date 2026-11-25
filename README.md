@@ -39,7 +39,8 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
 The copy button turns an entry into a vis-plug config line, for example:
 
 ```lua
-{ 'user/vis-foo', file = 'foo' },
+{ 'user/vis-foo', file = 'foo' },   -- plugin
+{ 'user/vis-foo', theme = 'foo' },  -- theme
 ```
 
 > The owner of this repository disclaims all liability regarding the use of third-party plugins on this site.

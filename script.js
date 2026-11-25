@@ -71,11 +71,10 @@ function tag_line(plugin) {
 function copy(plugin, theme, button) {
 	let repo = plugin.repo.replace(/https:\/\/(github.com\/)?/, '')
 	let lua = `{ '${repo}'`
-	if (plugin.file) {
-		lua += `, file = '${plugin.file}'`
-	}
 	if (theme) {
-		lua += `, theme = true`
+		lua += `, theme = '${plugin.file}'` // the theme file
+	} else if (plugin.file) {
+		lua += `, file = '${plugin.file}'`
 	}
 	lua += ` },`
 	navigator.clipboard.writeText(lua);
