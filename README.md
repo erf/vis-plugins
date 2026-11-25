@@ -21,17 +21,25 @@ Add an entry to [plugins.js](plugins.js) or [themes.js](themes.js). The page sor
   "repo": "https://github.com/user/vis-foo",
   "desc": "what it does",
   "file": "foo",          // optional module to load if not the default init.lua
-  "home": "https://...",  // optional link to homepage etc.
-  "tags": ["linux"]       // optional tag to describe what it's for or platform etc.
+  "home": "https://...",  // optional link to a homepage, docs etc.
+  "tags": ["linux"]       // optional tags, e.g. platform ("linux", "macos") or a dependency; clickable on the page
 }
 
 // themes.js
 {
   "name": "foo",
   "repo": "https://github.com/user/vis-foo",
-  "file": "foo",
-  "image": "https://.../screenshot.png"       // a link to a screenshot of code using theme
+  "file": "foo",                         // module to load, usually the theme name
+  "image": "https://.../screenshot.png", // a screenshot of code using the theme
+  "home": "https://...",                 // optional, as above
+  "tags": ["light"]                      // optional, as above
 }
+```
+
+The copy button turns an entry into a vis-plug config line, for example:
+
+```lua
+{ 'user/vis-foo', file = 'foo' },
 ```
 
 > The owner of this repository disclaims all liability regarding the use of third-party plugins on this site.

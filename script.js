@@ -70,14 +70,14 @@ function tag_line(plugin) {
 // copy a vis-plug config line to the clipboard
 function copy(plugin, theme, button) {
 	let repo = plugin.repo.replace(/https:\/\/(github.com\/)?/, '')
-	var lua = `{ '${repo}' `
+	let lua = `{ '${repo}'`
 	if (plugin.file) {
-		lua += `, file = '${plugin.file}' `
+		lua += `, file = '${plugin.file}'`
 	}
 	if (theme) {
-		lua += `, theme = ${theme} `
+		lua += `, theme = true`
 	}
-	lua += `},`
+	lua += ` },`
 	navigator.clipboard.writeText(lua);
 	button.textContent = 'copied'
 	setTimeout(() => button.textContent = 'copy', 1000)
